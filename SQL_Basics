@@ -1,0 +1,87 @@
+Revising the Select Query I:
+Query all columns for all American cities in the CITY table with populations larger than 100000. The CountryCode for America is USA.
+The CITY table is described as follows:
++-------------+--------------+
+| Field       | Type         |
++-------------+--------------+
+| ID          | NUMBER       |
+| NAME        | VARCHAR2(17) |
+| COUNTRYCODE | VARCHAR2(3)  |
+| DISTRICT    | VARCHAR2(20) | 
+| POPULATION  | NUMBER       |
++-------------+--------------+
+SELECT *
+FROM CITY
+WHERE POPULATION > 100000 AND COUNTRYCODE = "USA";
+
+
+
+Revising the Select Query II:
+Query the NAME field for all American cities in the CITY table with populations larger than 120000. The CountryCode for America is USA.
+The CITY table is described as follows:
++-------------+--------------+
+| Field       | Type         |
++-------------+--------------+
+| ID          | NUMBER       |
+| NAME        | VARCHAR2(17) |
+| COUNTRYCODE | VARCHAR2(3)  |
+| DISTRICT    | VARCHAR2(20) |
+| POPULATION  | NUMBER       |
++-------------+--------------+
+SELECT NAME
+FROM CITY
+WHERE COUNTRYCODE = "USA" AND POPULATION > 120000;
+
+
+
+Select All:
+Given a City table, whose fields are described as
++-------------+----------+
+| Field       | Type     |
++-------------+----------+
+| ID          | int(11)  |
+| Name        | char(35) |
+| CountryCode | char(3)  |
+| District    | char(20) |
+| Population  | int(11)  |
++-------------+----------+
+write a query that will fetch all columns for every row in the table.
+SELECT * FROM City;
+
+
+Select by ID:
+Query all columns for a city in CITY with the ID 1661.
+The CITY table is described as follows:
+Given a City table, whose fields are described as
++-------------+----------+
+| Field       | Type     |
++-------------+----------+
+| ID          | int(11)  |
+| Name        | char(35) |
+| CountryCode | char(3)  |
+| District    | char(20) |
+| Population  | int(11)  |
++-------------+----------+
+you have to print all the details of the city with ID is 1661
+SELECT * FROM City WHERE ID=1661;
+
+
+
+Weather Observation Station 1:
+Given a table STATION that holds data for five fields namely ID, CITY, STATE, NORTHERN LATITUDE and WESTERN LONGITUDE.
++-------------+------------+
+| Field       |   Type     |
++-------------+------------+
+| ID          | INTEGER    |
+| CITY        | VARCHAR(21)|
+| STATE       | VARCHAR(2) |
+| LAT_N       | NUMERIC    |
+| LONG_W      | NUMERIC    |
++-------------+------------+
+Write a query to print the list of CITY and STATE in lexicographical order of city and state, i.e., if there are two or more cities with same name arrange these by lexicographical order of state.
+SELECT CITY, STATE
+FROM STATION
+ORDER BY CITY, STATE;
+
+
+
