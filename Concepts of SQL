@@ -1,74 +1,74 @@
-## Fundamental Concepts of SQL
+Fundamental Concepts of SQL
 
-### 1. Introduction to SQL
+1. Introduction to SQL
 Structured Query Language (SQL) is a standard programming language used to manage and manipulate relational databases. SQL is used for a variety of tasks, including querying data, updating records, and managing database structures.
 
-### 2. Basic SQL Syntax
+2. Basic SQL Syntax
 SQL statements are used to perform tasks such as updating data in a database or retrieving data from a database. Here are some of the basic SQL commands:
 
-- **SELECT**: Retrieves data from a database.
-- **INSERT**: Inserts new data into a database.
-- **UPDATE**: Updates existing data within a database.
-- **DELETE**: Deletes data from a database.
-- **CREATE**: Creates new tables, views, or other database objects.
-- **ALTER**: Modifies an existing database object.
-- **DROP**: Deletes a table, view, or other database object.
+- SELECT: Retrieves data from a database.
+- INSERT: Inserts new data into a database.
+- UPDATE: Updates existing data within a database.
+- DELETE: Deletes data from a database.
+- CREATE: Creates new tables, views, or other database objects.
+- ALTER: Modifies an existing database object.
+- DROP: Deletes a table, view, or other database object.
 
-### 3. SQL Data Types
+3. SQL Data Types
 SQL supports various data types, including:
 
-- **Numeric Types**: INTEGER, FLOAT, DECIMAL, etc.
-- **String Types**: CHAR, VARCHAR, TEXT, etc.
-- **Date and Time Types**: DATE, TIME, TIMESTAMP, etc.
-- **Boolean Types**: BOOLEAN
+- Numeric Types: INTEGER, FLOAT, DECIMAL, etc.
+- String Types: CHAR, VARCHAR, TEXT, etc.
+- Date and Time Types: DATE, TIME, TIMESTAMP, etc.
+- Boolean Types: BOOLEAN
 
-### 4. SQL Clauses and Keywords
+4. SQL Clauses and Keywords
 SQL queries can be constructed using various clauses and keywords to filter, sort, and manipulate data:
 
-- **WHERE**: Filters records based on specified conditions.
-- **ORDER BY**: Sorts the result set of a query by one or more columns.
-- **GROUP BY**: Groups rows that have the same values in specified columns into aggregated data.
-- **HAVING**: Filters groups based on a specified condition, typically used with GROUP BY.
-- **JOIN**: Combines rows from two or more tables based on a related column.
-  - **INNER JOIN**: Returns records that have matching values in both tables.
-  - **LEFT JOIN**: Returns all records from the left table, and the matched records from the right table.
-  - **RIGHT JOIN**: Returns all records from the right table, and the matched records from the left table.
-  - **FULL JOIN**: Returns all records when there is a match in either left or right table.
+- WHERE: Filters records based on specified conditions.
+- ORDER BY: Sorts the result set of a query by one or more columns.
+- GROUP BY: Groups rows that have the same values in specified columns into aggregated data.
+- HAVING: Filters groups based on a specified condition, typically used with GROUP BY.
+- JOIN: Combines rows from two or more tables based on a related column.
+  - INNER JOIN: Returns records that have matching values in both tables.
+  - LEFT JOIN: Returns all records from the left table, and the matched records from the right table.
+  - RIGHT JOIN: Returns all records from the right table, and the matched records from the left table.
+  - FULL JOIN: Returns all records when there is a match in either left or right table.
 
-### 5. SQL Functions
+5. SQL Functions
 SQL provides a variety of functions to perform operations on data:
 
-- **Aggregate Functions**: COUNT, SUM, AVG, MAX, MIN, etc.
-- **String Functions**: CONCAT, LENGTH, SUBSTRING, etc.
-- **Date Functions**: NOW, CURDATE, DATEADD, etc.
-- **Mathematical Functions**: ABS, ROUND, CEIL, FLOOR, etc.
+- Aggregate Functions: COUNT, SUM, AVG, MAX, MIN, etc.
+- String Functions: CONCAT, LENGTH, SUBSTRING, etc.
+- Date Functions: NOW, CURDATE, DATEADD, etc.
+- Mathematical Functions: ABS, ROUND, CEIL, FLOOR, etc.
 
-### 6. Subqueries and Nested Queries
+6. Subqueries and Nested Queries
 Subqueries are queries nested inside another query. They are useful for performing complex operations in a single SQL statement. A subquery can return individual values or a set of rows:
 
-- **Scalar Subqueries**: Return a single value.
-- **Row Subqueries**: Return a single row.
-- **Table Subqueries**: Return a table.
+- Scalar Subqueries: Return a single value.
+- Row Subqueries: Return a single row.
+- Table Subqueries: Return a table.
 
-### 7. Indexes
+7. Indexes
 Indexes are special database objects that improve the speed of data retrieval. They are created on columns that are frequently searched or used in join conditions. However, indexes can slow down write operations (INSERT, UPDATE, DELETE).
 
-### 8. Transactions
+8. Transactions
 Transactions are sequences of SQL operations executed as a single unit of work. They ensure data integrity and consistency. Key concepts include:
 
-- **BEGIN TRANSACTION**: Starts a transaction.
-- **COMMIT**: Saves all changes made during the transaction.
-- **ROLLBACK**: Undoes all changes made during the transaction.
+- BEGIN TRANSACTION: Starts a transaction.
+- COMMIT: Saves all changes made during the transaction.
+- ROLLBACK: Undoes all changes made during the transaction.
 
-### 9. Constraints
+9. Constraints
 Constraints are rules applied to columns in a table to enforce data integrity. Common constraints include:
 
-- **NOT NULL**: Ensures that a column cannot have a NULL value.
-- **UNIQUE**: Ensures all values in a column are unique.
-- **PRIMARY KEY**: Uniquely identifies each row in a table.
-- **FOREIGN KEY**: Ensures referential integrity by linking columns in two tables.
-- **CHECK**: Ensures that values in a column satisfy a specific condition.
-- **DEFAULT**: Sets a default value for a column when no value is specified.
+- NOT NULL: Ensures that a column cannot have a NULL value.
+- UNIQUE: Ensures all values in a column are unique.
+- PRIMARY KEY: Uniquely identifies each row in a table.
+- FOREIGN KEY: Ensures referential integrity by linking columns in two tables.
+- CHECK: Ensures that values in a column satisfy a specific condition.
+- DEFAULT: Sets a default value for a column when no value is specified.
 
 ### 10. Views
 Views are virtual tables created by a query that selects data from one or more tables. They provide a way to simplify complex queries and enhance security by restricting access to specific data.
