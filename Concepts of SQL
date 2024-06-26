@@ -70,5 +70,5 @@ Constraints are rules applied to columns in a table to enforce data integrity. C
 - CHECK: Ensures that values in a column satisfy a specific condition.
 - DEFAULT: Sets a default value for a column when no value is specified.
 
-### 10. Views
+10. Views
 Views are virtual tables created by a query that selects data from one or more tables. They provide a way to simplify complex queries and enhance security by restricting access to specific data.
